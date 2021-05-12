@@ -12,7 +12,6 @@ import { RespaldoService } from 'src/app/services/respaldo.service';
 export class RespaldoComponent implements OnInit {
 
   public url;
-  public usuarios;
   public files;
   public identity;
 
@@ -37,7 +36,6 @@ export class RespaldoComponent implements OnInit {
   listar(){
     this._respaldoService.listar().subscribe(
       response =>{
-        console.log('respuesta: '+response.files);
         this.files = response.files;
         this._router.navigate(['respaldo']);
       },

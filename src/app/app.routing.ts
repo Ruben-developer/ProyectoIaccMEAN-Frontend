@@ -31,10 +31,7 @@ const appRoute : Routes = [
     {path: 'ventas',component: VentaIndexComponent},
     {path: 'venta/registrar',component: VentaCreateComponent},
     {path: 'venta/:id',component: VentaDetalleComponent},
-    {path: 'respaldo',component: RespaldoComponent},
-    {path: 'respaldo/respaldar',component: RespaldoComponent},
-    {path: 'respaldo/restaurar',component: RespaldoComponent},
-    {path: 'respaldo/eliminar',component: RespaldoComponent}
+    {path: 'respaldo',component: RespaldoComponent}
 ]
 
 
