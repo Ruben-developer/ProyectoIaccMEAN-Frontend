@@ -24,6 +24,9 @@ import { VentaIndexComponent } from './components/ventas/venta-index/venta-index
 import { VentaCreateComponent } from './components/ventas/venta-create/venta-create.component';
 import { VentaDetalleComponent } from './components/ventas/venta-detalle/venta-detalle.component';
 import { RespaldoComponent } from './components/respaldo/respaldo.component';
+import { SeguridadComponent } from './components/seguridad/seguridad-index/seguridad-index.component';
+import { BitacoraComponent } from './components/seguridad/seguridad-bitacora/seguridad-bitacora.component';
+import { AyudaComponent } from './components/ayuda/ayuda.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +46,10 @@ import { RespaldoComponent } from './components/respaldo/respaldo.component';
     VentaIndexComponent,
     VentaCreateComponent,
     VentaDetalleComponent,
-    RespaldoComponent
+    RespaldoComponent,
+    SeguridadComponent,
+    BitacoraComponent,
+    AyudaComponent
 
   ],
   imports: [

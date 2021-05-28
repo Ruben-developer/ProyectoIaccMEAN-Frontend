@@ -15,6 +15,10 @@ import { VentaIndexComponent } from './components/ventas/venta-index/venta-index
 import { VentaCreateComponent } from './components/ventas/venta-create/venta-create.component';
 import { VentaDetalleComponent } from './components/ventas/venta-detalle/venta-detalle.component';
 import { RespaldoComponent } from "./components/respaldo/respaldo.component";
+import { AyudaComponent } from './components/ayuda/ayuda.component';
+import { SeguridadComponent } from './components/seguridad/seguridad-index/seguridad-index.component';
+import { BitacoraComponent } from './components/seguridad/seguridad-bitacora/seguridad-bitacora.component';
+
 
 const appRoute : Routes = [
     {path: '', component: LoginComponent},
@@ -31,9 +35,11 @@ const appRoute : Routes = [
     {path: 'ventas',component: VentaIndexComponent},
     {path: 'venta/registrar',component: VentaCreateComponent},
     {path: 'venta/:id',component: VentaDetalleComponent},
-    {path: 'respaldo',component: RespaldoComponent}
+    {path: 'respaldo',component: RespaldoComponent},
+    {path: 'seguridad',component: SeguridadComponent},
+    {path: 'seguridad/bitacora',component: BitacoraComponent},
+    {path: 'ayuda',component: AyudaComponent}
 ]
-
 
 export const appRoutingProviders : any[] = [];
 export const routing:ModuleWithProviders = RouterModule.forRoot(appRoute);

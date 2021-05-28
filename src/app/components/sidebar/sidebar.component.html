@@ -28,7 +28,6 @@
                     </ul>
                 </li>-->
             
-
                 <li class="sidebar-item" routerLinkActive="sidebar-item active">
                     <a class="sidebar-link" [routerLink]="['/productos']"  >
                         <i class="align-middle mr-2 fas fa-fw fa-book"></i> <span class="align-middle">Productos</span>
@@ -56,6 +55,18 @@
                 <li class="sidebar-item" *ngIf="identity.role == 'ADMIN'" routerLinkActive="sidebar-item active">
                     <a class="sidebar-link" [routerLink]="['/respaldo']"  >
                         <i class="align-middle mr-2 fas fa-fw fa-book"></i> <span class="align-middle">Respaldo</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-item" *ngIf="identity.role == 'ADMIN'" routerLinkActive="sidebar-item active">
+                    <a class="sidebar-link" [routerLink]="['/seguridad']"  >
+                        <i class="align-middle mr-2 fas fa-fw fa-book"></i> <span class="align-middle">Seguridad</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-item" routerLinkActive="sidebar-item active">
+                    <a class="sidebar-link" [routerLink]="['/ayuda']">
+                        <i class="align-middle mr-2 fas fa-fw fa-book"></i> <span class="align-middle">Ayuda</span>
                     </a>
                 </li>
 
